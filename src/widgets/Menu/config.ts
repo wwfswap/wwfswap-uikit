@@ -123,13 +123,12 @@ export const socials = [
     label: "Twitter",
     icon: "TwitterIcon",
     href: "https://twitter.com/flat_token?s=21",
-  }
-  // ,
-  // {
-  //   label: "Reddit",
-  //   icon: "RedditIcon",
-  //   href: "https://www.reddit.com/r/Gloccoin/",
-  // },
+  },
+  {
+    label: "Github",
+    icon: "GithubIcon",
+    href: "https://github.com/wwfswap",
+  },
 ];
 
 export const MENU_HEIGHT = 64;
