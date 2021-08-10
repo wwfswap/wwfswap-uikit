@@ -117,18 +117,18 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/FlatEarthTokenOffical"
+    href: "https://t.me/wwfswap"
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/flat_token?s=21",
+    href: "https://mobile.twitter.com/WWFSwap",
   },
-  {
-    label: "Github",
-    icon: "GithubIcon",
-    href: "https://github.com/wwfswap",
-  },
+  // {
+  //   label: "Github",
+  //   icon: "GithubIcon",
+  //   href: "https://github.com/wwfswap",
+  // },
 ];
 
 export const MENU_HEIGHT = 64;

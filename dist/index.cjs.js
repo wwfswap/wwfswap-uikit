@@ -2266,17 +2266,12 @@ var socials = [
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        href: "https://t.me/FlatEarthTokenOffical"
+        href: "https://t.me/wwfswap"
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/flat_token?s=21",
-    },
-    {
-        label: "Github",
-        icon: "GithubIcon",
-        href: "https://github.com/wwfswap",
+        href: "https://mobile.twitter.com/WWFSwap",
     },
 ];
 var MENU_HEIGHT = 64;
