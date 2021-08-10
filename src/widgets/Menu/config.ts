@@ -115,20 +115,20 @@ export const links = [
 
 export const socials = [
   {
-    label: "Telegram",
-    icon: "TelegramIcon",
-    href: "https://t.me/wwfswap"
+    label: 'Blog',
+    icon: 'MediumIcon',
+    href: 'https://medium.com/@wwfswap'
   },
   {
-    label: "Twitter",
-    icon: "TwitterIcon",
-    href: "https://mobile.twitter.com/WWFSwap",
+    label: 'Reddit',
+    icon: 'RedditIcon',
+    href: 'https://www.reddit.com/user/WWFswap/'
   },
-  // {
-  //   label: "Github",
-  //   icon: "GithubIcon",
-  //   href: "https://github.com/wwfswap",
-  // },
+  {
+    label: 'Github',
+    icon: 'GithubIcon',
+    href: 'https://github.com/wwfswap'
+  },
 ];
 
 export const MENU_HEIGHT = 64;
