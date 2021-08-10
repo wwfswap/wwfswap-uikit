@@ -2261,9 +2261,9 @@ var links = [
 ];
 var socials = [
     {
-        label: 'Blog',
-        icon: 'MediumIcon',
-        href: 'https://medium.com/@wwfswap'
+        label: 'Github',
+        icon: 'GithubIcon',
+        href: 'https://github.com/wwfswap'
     },
     {
         label: 'Reddit',
@@ -2271,9 +2271,19 @@ var socials = [
         href: 'https://www.reddit.com/user/WWFswap/'
     },
     {
-        label: 'Github',
-        icon: 'GithubIcon',
-        href: 'https://github.com/wwfswap'
+        label: 'Blog',
+        icon: 'MediumIcon',
+        href: 'https://medium.com/@wwfswap'
+    },
+    {
+        label: 'Twitter',
+        icon: 'TwitterIcon',
+        href: 'https://mobile.twitter.com/WWFSwap'
+    },
+    {
+        label: 'Telegram',
+        icon: 'TelegramIcon',
+        href: 'https://t.me/wwfswap'
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2396,7 +2406,7 @@ var Container$4 = styled__default['default'].div(templateObject_1$C || (template
     return theme.nav.background;
 });
 var PriceLink = styled__default['default'].a(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
-styled__default['default'].div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
+var SettingsEntry = styled__default['default'].div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
 var SocialEntry = styled__default['default'].div(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
 var PanelFooter = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav; _a.toggleTheme; _a.isDark; var cakePriceUsd = _a.cakePriceUsd; _a.currentLang; _a.langs; _a.setLang; var priceLink = _a.priceLink;
@@ -2406,17 +2416,16 @@ var PanelFooter = function (_a) {
                 React__default['default'].createElement(Icon$l, null))));
     }
     return (React__default['default'].createElement(Container$4, null,
-        React__default['default'].createElement(SocialEntry, null,
-            cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-                React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
-                React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
-            React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
-                var Icon = Icons$1[social.icon];
-                var iconProps = { width: "20px", color: "primary", style: { cursor: "pointer" } };
-                var mr = index < socials.length - 1 ? "8px" : 0;
-                return (React__default['default'].createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
-                    React__default['default'].createElement(Icon, __assign({}, iconProps))));
-            })))));
+        React__default['default'].createElement(SettingsEntry, null, cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
+            React__default['default'].createElement(Icon$v, { width: "24px", mr: "8px" }),
+            React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 }))),
+        React__default['default'].createElement(SocialEntry, null, socials.map(function (social, index) {
+            var Icon = Icons$1[social.icon];
+            var iconProps = { width: "20px", color: "primary", style: { cursor: "pointer" } };
+            var mr = index < socials.length - 1 ? "8px" : 0;
+            return (React__default['default'].createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
+                React__default['default'].createElement(Icon, __assign({}, iconProps))));
+        }))));
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2;
 

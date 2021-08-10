@@ -115,9 +115,9 @@ export const links = [
 
 export const socials = [
   {
-    label: 'Blog',
-    icon: 'MediumIcon',
-    href: 'https://medium.com/@wwfswap'
+    label: 'Github',
+    icon: 'GithubIcon',
+    href: 'https://github.com/wwfswap'
   },
   {
     label: 'Reddit',
@@ -125,9 +125,19 @@ export const socials = [
     href: 'https://www.reddit.com/user/WWFswap/'
   },
   {
-    label: 'Github',
-    icon: 'GithubIcon',
-    href: 'https://github.com/wwfswap'
+    label: 'Blog',
+    icon: 'MediumIcon',
+    href: 'https://medium.com/@wwfswap'
+  },
+  {
+    label: 'Twitter',
+    icon: 'TwitterIcon',
+    href: 'https://mobile.twitter.com/WWFSwap'
+  },
+  {
+    label: 'Telegram',
+    icon: 'TelegramIcon',
+    href: 'https://t.me/wwfswap'
   },
 ];
 
