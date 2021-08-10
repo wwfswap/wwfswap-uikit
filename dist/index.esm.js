@@ -2399,7 +2399,7 @@ var PanelFooter = function (_a) {
                 React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
             React.createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons$1[social.icon];
-                var iconProps = { width: "24px", color: "primary", style: { cursor: "pointer" } };
+                var iconProps = { width: "20px", color: "primary", style: { cursor: "pointer" } };
                 var mr = index < socials.length - 1 ? "8px" : 0;
                 return (React.createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
                     React.createElement(Icon, __assign({}, iconProps))));
