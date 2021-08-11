@@ -1,3 +1,4 @@
+export { default as ChartIcon } from "./Chart";
 export { default as ExchangeIcon } from "./Exchange";
 export { default as FarmIcon } from "./Farm";
 export { default as GitbookIcon } from "./Gitbook";
