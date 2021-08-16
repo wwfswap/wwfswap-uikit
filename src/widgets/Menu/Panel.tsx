@@ -4,10 +4,12 @@ import PanelBody from "./PanelBody";
 import PanelFooter from "./PanelFooter";
 import { SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
 import { PanelProps, PushedProps } from "./types";
+import AuditButton from "./AuditButton";
 
 interface Props extends PanelProps, PushedProps {
   showMenu: boolean;
   isMobile: boolean;
+  badgeLink?: string;
 }
 
 const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
@@ -35,10 +37,11 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
 `;
 
 const Panel: React.FC<Props> = (props) => {
-  const { isPushed, showMenu } = props;
+  const { isPushed, showMenu, badgeLink } = props;
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
+      {badgeLink && <AuditButton  auditLink={badgeLink} />}
       <PanelFooter {...props} />
     </StyledPanel>
   );
