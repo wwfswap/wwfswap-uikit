@@ -17,7 +17,7 @@ const StyledAudit = styled.div`
   }
 `;
 
-const AuditButton: React.FC<AuditProps> = ({ auditLink }) => {
+const RugDocAuditButton: React.FC<AuditProps> = ({ auditLink }) => {
   return (
     <StyledAudit>
       <a href={auditLink} aria-label="AuditLink" target="_blank">
@@ -27,4 +27,4 @@ const AuditButton: React.FC<AuditProps> = ({ auditLink }) => {
     )
 };
 
-export default AuditButton;
+export default RugDocAuditButton;

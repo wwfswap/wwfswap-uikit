@@ -3,7 +3,8 @@ import { PanelProps, PushedProps } from "./types";
 interface Props extends PanelProps, PushedProps {
     showMenu: boolean;
     isMobile: boolean;
-    badgeLink?: string;
+    rugDocLink?: string;
+    jagoSaferLink?: string;
 }
 declare const Panel: React.FC<Props>;
 export default Panel;

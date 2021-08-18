@@ -42,7 +42,8 @@ export interface PanelProps {
     priceLink: string;
 }
 export interface NavProps extends PanelProps {
-    badgeLink?: string;
+    rugDocLink?: string;
+    jagoSaferLink?: string;
     account?: string;
     login: Login;
     profile?: Profile;
